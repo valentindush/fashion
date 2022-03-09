@@ -1,3 +1,3 @@
 ### Fashion Website
 
-using only ### html and ### css
+using only `html` and `css`
