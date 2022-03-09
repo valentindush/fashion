@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+
+:root{
+    --primaryColor: rgb(236, 158, 14);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color: #fff;
+    position: relative;
+}
+
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top:0;
+    z-index: 1000000;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: fit-content;
+    margin: 3em auto;
+    background-color: rgb(245, 202, 147);
+    height: 2em;
+    padding: 1.5em .5em;
+    border-radius: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: nowrap;
+}
+
+.navlinks .navitem a{
+    padding: .7em 1em;
+    border-radius: 2em;
+    transition: .4s ease-in;
+    cursor: pointer;
+    font-size: .8em;
+}
+
+.navlinks .navitem a:hover{
+    background:  var(--primaryColor);
+    color: #fff;
+}
+.navitem.active a{
+    background:  var(--primaryColor);
+    color: #fff;
+}
+
+.hero{
+    width: 100%;
+    position: relative;
+    margin-top: -1em;
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../img/kids.webp');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hero .title h3{
+    font-size: 3em;
+    font-family: 'Rubik Beastly', cursive;
+    color: #fff;
+}
+
+.title h3 span{
+    color: var(--primaryColor);
+    font-family: 'Rubik Beastly', cursive;
+    
+}
+
+.hero .subtitle{
+    margin-top: 2em;
+}
+
+.subtitle h3{
+    color: #fff;
+    font-size: 2em;
+}
+
+.hero .btns{
+    padding-top: 4em;
+}
+
+.hero .btns a{
+    background-color: var(--primaryColor);
+    padding:.5em 2em;
+    color: #fff;
+    border-radius: 0.3em;
+    font-size: .8em;
+    margin: .5em;
+    transition: .3s ease-in;
+}
+.hero .btns a:last-child{
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+.hero .btns a:last-child:hover{
+    background-color: transparent;
+    /* border: 1px solid #111; */
+}
+.hero .btns a:hover{
+    background-color: #111;
+}
+
+.about {
+    width: 100%;
+    /* height: 100vh; */
+    z-index:1000;
+    background: #fff;
+    /* position: absolute;
+    top:100vh; */
+    /* padding-top: 8em; */
+}
+
+
+/* GALLERY  */
+
+.about .gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    /* height: 100vh; */
+}
+
+.about h3{
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.about .gallery .pics{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .gallery .pics .row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.about .pics .item{
+    width: 15em;
+    height: 12em;
+    border-radius:1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+.about .pics .item:hover{
+   transform: scale(1.02);
+   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.gallery .pics  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.about .gallery .pics > a{
+    background:  #111;
+    color: #fff;
+    padding: .4em 2em;
+    border-radius: 1em;
+    font-size: .8em;
+    transition: .3s ease-in;
+}
+.about .gallery a:hover{
+    background: var(--primaryColor);
+}
+
+.about .shop{
+    width: 100%;
+    height: 100%;
+    background: rgba(248, 243, 228, 0.5);
+    padding-top: 1em;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 80%;
+    flex-wrap: wrap;
+    
+}
+
+ .item{
+    width: 15em;
+    height: 15em;
+    box-shadow: 0 0 1px rgba(0, 0, 0,0.5);
+    border-radius: .5em;
+    position: relative;
+    background: rgba(255, 255, 255,0.75);
+}
+ .item img{
+    width: 100%;
+    height: 80%;
+    border-radius: .5em;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+ .item .ifooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.ifooter i{
+    color: var(--primaryColor);
+    background-color: transparent;
+    border:  1px solid var(--primaryColor);
+    padding: .5em;
+    border-radius: 50%;
+    transition: .3s ease-in;
+}
+.ifooter i:hover{
+    background: var(--primaryColor);
+    color:#fff;
+}
+#toshop{
+    border: 1px solid var(--primaryColor);
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: .8em;
+    padding: 1em;
+    border-radius: 2em;
+    transition: .3s ease-in;
+}
+#toshop:hover{
+    background: var(--primaryColor);
+    color: #fff;
+}
+
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+}
+
+.help input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 35px;
+    width: 20em;
+    padding:1em;
+    border-top-left-radius: .6em;
+    border-bottom-left-radius: .6em;
+}
+
+.help .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.help a{
+    background: var(--primaryColor);
+    color: #fff;
+    height: 35px;
+    padding: 0 1em;
+    border-top-right-radius: .6em;
+    border-bottom-right-radius: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+}
+
+
+
+/* shop */
+
+.shopcover{
+    width: 100%;
+    height: 100vh;
+    margin-top: -9em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/download.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.shopcover .title h2{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+@keyframes arrowDown {
+    
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.s_btn a{
+    border: 1px solid var(--primaryColor);
+    padding: 1em;
+    border-radius: 5em;
+    color: #fff;
+    padding: .5em 2em;
+    transition: .3s ease-in;
+}
+.s_btn a:hover{
+    background: var(--primaryColor);    
+}
+
+.s_btn a i{
+    color: #fff;
+    animation: 1s arrowDown infinite;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background: rgb(248, 237, 186);
+}
+
+
+.footer footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.footer .col h3{
+    padding-bottom: 1em;
+}
+
+.footer .col .f_items{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+
+.f_items a{
+    font-size: .8em;
+    transition: .3s ease-in;
+    color: #222;
+}
+.f_items a:hover{
+    letter-spacing: .1em;
+}
+
+
+.cpyright{
+    padding: 3em 0;
+    font-size: .8em;
+    text-align: center;
+}
+
+.footer .col.contact .f_items{
+    flex-direction: row;
+    gap: 1em;
+    justify-content:center;
+    align-items:center;
+}
+
+.f_items .col.contact a:hover{
+    transform: scale(1.01);
+    letter-spacing: 0;
+}
+.footer .col.contact i{
+    font-size: 1.2em;
+    background-color: var(--primaryColor);
+    padding:.5em;
+    color: #fff;
+    border-radius:50%;
+}
