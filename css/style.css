@@ -711,6 +711,10 @@ h3, h2{
    
 }
 
+.d_item h3{
+    color: #111;
+}
+
 .d_item .s_icons{
     margin-top: 1em;
 }
@@ -789,13 +793,32 @@ h3, h2{
     font-size: .9em;
 }
 
+@keyframes Acover{
+    0%{
+        background: rgba(253, 151, 16, 0.22);
+    }
+    25%{
+        background: rgba(66, 240, 8, 0.22);
+    }
+    50%{
+        background: rgba(240, 8, 143, 0.22);
+    }
+    75%{
+        background: rgba(233, 236, 20, 0.22);
+    }
+    100%{
+        background: rgba(8, 93, 240, 0.22);
+    }
+}
+
 .se_item .s_cover{
     position: absolute;
     width: 100%;
     height: 0%;
-    background: rgba(243, 236, 143, 0.52);
+    background: rgba(253, 151, 16, 0.22);
     bottom: 0;
     transition: .6s ease-in;
+    animation: 2s Acover infinite;
 }
 
 .se_item:hover .s_cover{
