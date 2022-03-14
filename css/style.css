@@ -1192,7 +1192,8 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         align-items: center;
     }
     .c_contact form input, .c_contact form textarea, .c_contact form button[type="submit"]{
-        width: 80%;
+        width: 90%;
+        margin: auto;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -1202,6 +1203,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         align-items: center;
     }
     .c_contact form input, .c_contact form textarea, .c_contact form button[type="submit"]{
-        width: 80%;
+        width: 90%;
+        margin: auto;
     }
 }
