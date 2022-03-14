@@ -1199,7 +1199,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     /* navbar responsive */
 
     .navlinks{
-        gap: .2em;
+        gap: .01em;
     }
 }
 @media only screen and (max-width: 320px) {
