@@ -684,6 +684,7 @@ h3, h2{
     cursor: pointer;
 }
 
+
 .d_item:hover{
     filter: brightness(95%);
 }
@@ -1185,6 +1186,57 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 }
 
 
+.cpics .row{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.cpics .row img{
+    transition: .4s ease-in;
+}
+
+.cpics .row .item:hover img{
+    height: 100%;
+}
+
+.qgallery{
+    /* background-color: #111; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.qgallery .row .item{
+    width: 12em;
+    height: 12em;
+}
+.qgallery .row .item img{
+    transition: .4s ease;
+    height: 90%;
+}
+
+.qgallery .row .item:hover img{
+    height: 100%;
+}
+.subttle p{
+    color: #fff;
+}
+
+.center_txt{
+    text-align: center;
+    padding-top: 2em;
+    
+}
+
+.center_txt h3{
+    color: #111 ;
+}
+
 /* Form REPONSIVE  */
 
 @media only screen and(max-width: 1400px){
@@ -1266,4 +1318,8 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     .about_cover .a_title .hash{
         width: 80%;
     }
+}
+
+.d_item h4{
+    color: #111;
 }
