@@ -1134,6 +1134,7 @@ h3, h2{
     outline: none;
     border-radius: .5em;
     border: none;
+    color: #fff;
     background: rgba(255, 2555, 255, 0.25);
 }
 
@@ -1181,7 +1182,7 @@ h3, h2{
         width: 80vh;
     }
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
     .c_contact{
         display: flex;
         flex-direction: column;
