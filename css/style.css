@@ -86,11 +86,11 @@ h3, h2{
 }
 
 .navlinks .navitem a:hover{
-    background:  var(--primaryColor);
+    background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
     color: #fff;
 }
 .navitem.active a{
-    background:  var(--primaryColor);
+    background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
     color: #fff;
 }
 
