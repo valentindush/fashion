@@ -553,7 +553,9 @@ h3, h2{
     background: rgba(253, 253, 253, 0.15);
     width: 50%;
     border-radius: .4em;
+    max-height: 100%;
     padding: 1em;
+    overflow: hidden;
 }
 
 .about_cover .a_title h2, h3{
@@ -888,6 +890,7 @@ h3, h2{
     top: 1em;
     border-radius: .5em;
     transition: .6s ease-in;
+    animation: 2s Acover infinite;
     cursor: pointer;
 }
 
@@ -1184,6 +1187,19 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 /* Form REPONSIVE  */
 
+@media only screen and(max-width: 1400px){
+
+    .about_cover .a_title .hash{
+        width: 80%;
+    }
+
+    .about_cover .btns{
+        padding-top: .5em;
+    }
+
+
+}
+
 
 @media only screen and (max-width: 768px) {
     .c_contact{
@@ -1201,6 +1217,32 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     .navlinks{
         gap: .01em;
     }
+
+    /* footer responsive */
+
+    .footer footer{
+        gap: 0;
+    }
+
+    /* ABOUT PAGE-reponsive */
+
+    .a_title{
+        width: 95%;
+    }
+
+    .about_cover .a_title{
+        width: 95%;
+    }
+
+    .about_cover .a_title .hash{
+        width: 80%;
+    }
+
+    .about_cover .btns{
+        padding-top: .5em;
+    }
+
+
 }
 @media only screen and (max-width: 320px) {
     .c_contact{
@@ -1211,5 +1253,17 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     .c_contact form input, .c_contact form textarea, .c_contact form button[type="submit"]{
         width: 90%;
         /* margin: auto; */
+    }
+
+    .footer footer{
+        gap: 0;
+    }
+
+    .about_cover .a_title{
+        width: 95%;
+    }
+
+    .about_cover .a_title .hash{
+        width: 80%;
     }
 }
